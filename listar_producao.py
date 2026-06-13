@@ -19,7 +19,7 @@ def testar_conexao():
         
         bolsas = cursor.fetchall()
         
-        print("\n--- 👜 ART-TECH: BOLSAS EM PRODUÇÃO ---")
+        print("\n--- 👜 ARTE-TECH: BOLSAS EM PRODUÇÃO ---")
         for bolsa in bolsas:
             print(f"ID: {bolsa[0]} | Modelo: {bolsa[1]} | Linha: {bolsa[2]} | Status: {bolsa[3]}")
         print("---------------------------------------\n")

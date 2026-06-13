@@ -1,7 +1,7 @@
 import psycopg2
 
 def registrar_horas():
-    print("--- ⏱️ ART-TECH: REGISTRO DE FLUXO DE TRABALHO ---")
+    print("--- ⏱️ ARTE-TECH: REGISTRO DE FLUXO DE TRABALHO ---")
     
     # 1. Solicita ao usuário a quantidade de horas trabalhadas na sessão
     try:

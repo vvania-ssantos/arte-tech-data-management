@@ -2,7 +2,7 @@ import psycopg2
 
 def exibir_painel_eficiencia():
     print("\n==================================================")
-    print("       📊 ART-TECH: PAINEL DE EFICIÊNCIA          ")
+    print("       📊 ARTE-TECH: PAINEL DE EFICIÊNCIA          ")
     print("==================================================")
     
     id_bolsa = 2  # Sua nova bolsa de Fio Náutico

@@ -1,7 +1,7 @@
 import psycopg2
 
 def precificar_com_realidade():
-    print("--- 💸 ART-TECH: PRECIFICAÇÃO REALISTA DE MERCADO ---")
+    print("--- 💸 ARTE-TECH: PRECIFICAÇÃO REALISTA DE MERCADO ---")
     
     id_bolsa = 1
     
