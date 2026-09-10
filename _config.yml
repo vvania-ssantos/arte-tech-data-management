@@ -1,6 +1,9 @@
 theme: jekyll-theme-cayman
 title: Arte Tech Data Management
 description: Blog e portfólio de Vania dos Santos sobre arte, tecnologia e gestão de dados.
+header_image: /assets/logo.png
+favicon: /assets/favicon.png
+
 # Links de navegação (menu)
 nav:
   - title: Início
