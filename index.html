@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Arte Tech Data Management</title>
+  <title>{{ page.title | default: site.title }}</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,16 +21,24 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .banner {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
-  <h1>Bem-vinda ao meu site!</h1>
-  <p>Este é o espaço do projeto Arte Tech Data Management. Aos poucos vou transformá-lo em um blog e portfólio.</p>
+  <!-- Banner aparece em todas as páginas -->
+  <div class="banner">
+    <img src="/assets/logo.png" alt="Arte-Tech Banner">
+  </div>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="blog.html">Blog</a>
-    <a href="sobre.html">Sobre</a>
-  </nav>
+  <!-- Aqui entra o conteúdo específico de cada página -->
+  {{ content }}
 </body>
 </html>
