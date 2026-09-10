@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Blog - Arte Tech Data Management</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #0066cc;
-    }
-    article {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Arte Tech Data Management</title>
+<meta name="description" content="Ideias, aprendizados e novidades sobre tecnologia, arte e gestão de dados.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Meu Blog</h1>
-  <p>Aqui vou compartilhar ideias, aprendizados e novidades.</p>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="blog.html">Blog</a>
-    <a href="sobre.html">Sobre</a>
-  </nav>
+<header class="site-head">
+  <div class="wrap">
+    <a class="site-title" href="index.html">Arte Tech Data Management</a>
+    <nav class="site-nav">
+      <a href="index.html">Início</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
 
-  <hr>
+<section class="hero">
+  <div class="wrap">
+    <h1>Meu blog.</h1>
+    <p>Aqui vou compartilhar ideias, aprendizados e novidades.</p>
+  </div>
+</section>
 
-  <article>
-    <h2>Primeiro Post</h2>
-    <p>Oi! Este é o meu primeiro post no blog. Aos poucos vou escrever mais conteúdos aqui.</p>
-    <small>Publicado em 10/09/2026</small>
-  </article>
+<main>
+  <div class="wrap">
+    <p class="section-label">Todos os posts</p>
+    <h2>Registros</h2>
+    <ul class="entry-list">
+      <li class="entry">
+        <time>10/09/2026</time>
+        <div>
+          <h3>Primeiro Post</h3>
+          <p>Oi! Este é o meu primeiro post no blog. Aos poucos vou escrever mais conteúdos aqui.</p>
+        </div>
+      </li>
+      <li class="entry pending">
+        <time>Em breve</time>
+        <div>
+          <h3>Segundo Post</h3>
+          <p>Este espaço é para compartilhar reflexões sobre tecnologia, arte e gestão de dados.</p>
+        </div>
+      </li>
+      <!--
+        Para adicionar um novo post, copie um bloco <li class="entry">...</li>
+        inteiro, cole aqui em cima e troque a data, o título e o texto.
+        Se ainda não tiver data definida, use class="entry pending".
+      -->
+    </ul>
+  </div>
+</main>
 
-  <article>
-    <h2>Segundo Post</h2>
-    <p>Este espaço é para compartilhar reflexões sobre tecnologia, arte e gestão de dados.</p>
-    <small>Publicado em breve...</small>
-  </article>
+<footer class="site-foot">
+  <div class="wrap">
+    Arte Tech Data Management
+  </div>
+</footer>
+
 </body>
 </html>

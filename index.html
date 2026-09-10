@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title | default: site.title }}</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #0066cc;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .banner {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .banner img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arte Tech Data Management</title>
+<meta name="description" content="Projeto pessoal sobre arte, tecnologia e gestão de dados.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Banner aparece em todas as páginas -->
-  <div class="banner">
-    <img src="/assets/logo.png" alt="Arte-Tech Banner">
-  </div>
 
-  <!-- Aqui entra o conteúdo específico de cada página -->
-  {{ content }}
+<header class="site-head">
+  <div class="wrap">
+    <a class="site-title" href="index.html">Arte Tech Data Management</a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="blog.html">Blog</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Bem-vinda ao meu site.</h1>
+    <p>Este é o espaço do projeto Arte Tech Data Management. Aos poucos vou transformá-lo em um blog e portfólio.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <p class="section-label">Novidades</p>
+    <h2>Últimos registros</h2>
+    <ul class="entry-list">
+      <li class="entry">
+        <time>10/09/2026</time>
+        <div>
+          <h3>Primeiro Post</h3>
+          <p>Oi! Este é o meu primeiro post no blog. Aos poucos vou escrever mais conteúdos aqui.</p>
+        </div>
+      </li>
+      <li class="entry pending">
+        <time>Em breve</time>
+        <div>
+          <h3>Segundo Post</h3>
+          <p>Este espaço é para compartilhar reflexões sobre tecnologia, arte e gestão de dados.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    Arte Tech Data Management
+  </div>
+</footer>
+
 </body>
 </html>
