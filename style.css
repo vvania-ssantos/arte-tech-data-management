@@ -75,6 +75,9 @@ header.site-head {
 }
 
 .site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--serif);
   font-weight: 600;
   font-size: 1.05rem;
@@ -83,6 +86,12 @@ header.site-head {
   border-bottom: none;
 }
 .site-title:hover { color: var(--accent); }
+
+.site-title img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
 
 nav.site-nav { display: flex; gap: 22px; }
 nav.site-nav a {
@@ -115,6 +124,15 @@ nav.site-nav a[aria-current="page"] {
   max-width: 46ch;
   margin: 0;
   font-size: 1.05rem;
+}
+
+.hero-banner {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin-bottom: 32px;
 }
 
 /* ---------- seções gerais ---------- */
