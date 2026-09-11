@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arte Tech Data Management | Bolsas Artesanais & Blog</title>
+  <link rel="icon" href="assets/assets/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- CABEÇALHO -->
-  <header class="header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="assets/assets/logo arte-tech1.png" alt="Logo Arte Tech">
-        <span>Arte Tech</span>
+  <header class="site-head">
+    <div class="wrap">
+      <a href="index.html" class="site-title">
+        <img src="assets/assets/logo%20arte-tech1.png" alt="Logo Arte Tech">
+        Arte Tech
       </a>
-      <nav class="nav-menu">
-        <a href="index.html" class="active">Início</a>
+      <nav class="site-nav">
+        <a href="index.html" aria-current="page">Início</a>
         <a href="#colecao">Bolsas</a>
         <a href="blog.html">Blog</a>
         <a href="sobre.html">Sobre</a>
@@ -24,78 +25,83 @@
     </div>
   </header>
 
-  <!-- BANNER PRINCIPAL (HERO) -->
+  <!-- SEÇÃO PRINCIPAL (HERO) -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Bolsas Artesanais Exclusivas</h1>
-      <p>A união perfeita entre o design feito à mão, elegância e precisão.</p>
-      <div class="hero-buttons">
-        <a href="#colecao" class="btn btn-primary">Conhecer Bolsas</a>
-        <a href="blog.html" class="btn btn-secondary">Ler o Blog</a>
+    <div class="wrap">
+      <h1>Bolsas Artesanais Exclusivas & Gestão Autoral</h1>
+      <p>A união entre a delicadeza do trabalho feito à mão e a precisão do design estruturado. Conheça nossas peças únicas e acompanhe nossos registros.</p>
+      
+      <div class="hero-actions">
+        <a href="#colecao" class="btn btn-primary">Ver Coleção de Bolsas</a>
+        <a href="blog.html" class="btn btn-secondary">Acessar o Blog</a>
       </div>
     </div>
   </section>
 
-  <!-- VITRINE DE PRODUTOS -->
-  <section id="colecao" class="section produtos">
-    <div class="container">
-      <h2 class="section-title">Nossas Peças</h2>
-      <p class="section-subtitle">Confira alguns dos modelos produzidos artesanalmente</p>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <div class="wrap">
+      
+      <!-- VITRINE DE BOLSAS -->
+      <section class="section-block" id="colecao">
+        <p class="section-label">Coleção Autoral</p>
+        <h2>Nossas Bolsas</h2>
+        
+        <div class="products-grid">
+          
+          <!-- Card de Bolsa 1 -->
+          <article class="product-card">
+            <!-- Substitua a imagem abaixo pela foto real da sua bolsa -->
+            <img src="assets/assets/logo%20arte-tech2.png" alt="Bolsa de Crochê Eudora">
+            <h3>Bolsa Eudora</h3>
+            <p class="price">Sob Encomenda</p>
+            <p>Bolsa estruturada confeccionada artesanalmente com fios selecionados e acabamento de alta qualidade.</p>
+            <a href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Bolsa%20Eudora." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Encomendar via WhatsApp</a>
+          </article>
 
-      <div class="grid-cards">
-        <!-- Card 1 -->
-        <div class="card card-produto">
-          <div class="card-img-placeholder">Foto da Bolsa</div>
-          <div class="card-body">
-            <h3>Bolsa Crochê Premium</h3>
-            <p>Estruturada, acabamento impecável e alça metálica.</p>
-            <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-sm">Encomendar</a>
-          </div>
+          <!-- Card de Bolsa 2 -->
+          <article class="product-card">
+            <!-- Substitua a imagem abaixo pela foto real da sua bolsa -->
+            <img src="assets/assets/logo%20arte-tech2.png" alt="Bolsa Tela e Fio">
+            <h3>Bolsa Tela & Fio</h3>
+            <p class="price">Sob Encomenda</p>
+            <p>Design moderno sobre tela artesanal, combinando leveza, elegância e alta resistência para o dia a dia.</p>
+            <a href="https://wa.me/5511963394826?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Bolsa%20Tela%20e%20Fio." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Encomendar via WhatsApp</a>
+          </article>
+
         </div>
+      </section>
 
-        <!-- Card 2 -->
-        <div class="card card-produto">
-          <div class="card-img-placeholder">Foto da Bolsa</div>
-          <div class="card-body">
-            <h3>Bolsa de Tela & Fio</h3>
-            <p>Design moderno, leve e de alta durabilidade.</p>
-            <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-sm">Encomendar</a>
-          </div>
-        </div>
-      </div>
+      <!-- REGISTROS / BLOG -->
+      <section class="section-block">
+        <p class="section-label">Blog & Reflexões</p>
+        <h2>Últimos Registros</h2>
+        
+        <ul class="entry-list">
+          <li class="entry">
+            <time>10/09/2026</time>
+            <div>
+              <h3><a href="blog.html">Primeiro Post</a></h3>
+              <p>Oi! Este é o meu primeiro post no blog. Aos poucos vou escrever mais conteúdos aqui sobre processo criativo e artesanal.</p>
+            </div>
+          </li>
+          <li class="entry pending">
+            <time>Em breve</time>
+            <div>
+              <h3><a href="blog.html">Segundo Post</a></h3>
+              <p>Este espaço é para compartilhar reflexões sobre tecnologia, arte, bolsas artesanais e gestão de dados.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
     </div>
-  </section>
-
-  <!-- SEÇÃO DO BLOG (ÚLTIMOS POSTS) -->
-  <section class="section blog-preview">
-    <div class="container">
-      <h2 class="section-title">Do Nosso Blog</h2>
-      <p class="section-subtitle">Reflexões sobre processo criativo, técnicas e tecnologia</p>
-
-      <div class="grid-cards">
-        <!-- Post 1 -->
-        <article class="card card-post">
-          <span class="post-date">10/09/2026</span>
-          <h3>Como escolho os materiais para cada bolsa</h3>
-          <p>Entenda o processo de seleção de fios e estruturas para garantir qualidade e elegância...</p>
-          <a href="blog.html" class="read-more">Ler artigo &rarr;</a>
-        </article>
-
-        <!-- Post 2 -->
-        <article class="card card-post">
-          <span class="post-date">Em breve</span>
-          <h3>A precisão dos dados na arte do feito à mão</h3>
-          <p>Como a organização e a gestão de dados ajudam a aprimorar o design artesanal...</p>
-          <a href="blog.html" class="read-more">Ler artigo &rarr;</a>
-        </article>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- RODAPÉ -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Arte Tech Data Management. Todos os direitos reservados.</p>
+  <footer class="site-foot">
+    <div class="wrap">
+      Arte Tech Data Management &copy; 2026 — Design autoral e bolsas feitas à mão.
     </div>
   </footer>
 
