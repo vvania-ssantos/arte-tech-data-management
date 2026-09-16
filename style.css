@@ -339,3 +339,18 @@ footer.site-foot {
   .products-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
 }
+/* Ajuste do Banner/Logo do Topo */
+.top-banner img {
+  max-height: 80px; /* Altere para 60px se quiser ainda menor, ou 100px se quiser um pouco maior */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
