@@ -333,7 +333,7 @@ footer.site-foot {
 
 @media (max-width: 520px) {
   .hero-banner {
-    height: 180px; /* Ainda mais compacto no celular */
+    height: 400px; /* Ainda mais compacto no celular */
   }
   .entry { grid-template-columns: 1fr; gap: 6px; }
   .products-grid { grid-template-columns: 1fr; }
