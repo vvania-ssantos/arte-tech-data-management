@@ -53,7 +53,7 @@ a:focus-visible, button:focus-visible {
   padding: 0 24px;
 }
 
-/* ---------- cabeçalho ---------- */
+/* ---------- cabeçalho e topo ---------- */
 
 header.site-head {
   border-bottom: 1px solid var(--line);
@@ -68,23 +68,31 @@ header.site-head {
   gap: 12px;
 }
 
-.site-title {
+header.site-head .wrap.header-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: .01em;
-  color: var(--text);
-  border-bottom: none;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
 }
-.site-title:hover { color: var(--accent); }
 
-.site-title img {
-  height: 32px;
-  width: auto;
+.top-banner {
   display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: none; /* remove a linha amarela de link do banner */
+}
+
+/* BANNER PRINCIPAL DO TOPO (AJUSTADO PARA 200px) */
+.top-banner img {
+  width: 100% !important;
+  max-width: 200px !important; /* <--- SE QUISER MUDAR O TAMANHO NO FUTURO, É SÓ ALTERAR AQUI */
+  height: auto !important;
+  max-height: none !important;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 nav.site-nav { display: flex; gap: 22px; }
@@ -99,7 +107,7 @@ nav.site-nav a[aria-current="page"] {
   border-color: var(--accent);
 }
 
-/* ---------- hero / banner ajustado ---------- */
+/* ---------- hero ---------- */
 
 .hero {
   padding: 48px 0 32px;
@@ -118,18 +126,6 @@ nav.site-nav a[aria-current="page"] {
   max-width: 52ch;
   margin: 0 0 24px;
   font-size: 1.05rem;
-}
-
-/* Ajuste Fino do Banner Principal */
-.hero-banner {
-  display: block;
-  width: 100%;
-  height: 180px; /* Altura controlada para não ocupar a tela toda */
-  object-fit: cover; /* Recorta suavemente sem distorcer a imagem */
-  object-position: center; /* Garante foco no centro da imagem */
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  margin-bottom: 28px;
 }
 
 .hero-actions {
@@ -332,51 +328,7 @@ footer.site-foot {
 /* ---------- responsividade (celular) ---------- */
 
 @media (max-width: 520px) {
-  .hero-banner {
-    height: 200px; /* Ainda mais compacto no celular */
-  }
   .entry { grid-template-columns: 1fr; gap: 6px; }
   .products-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
-}
-/* Ajuste do Banner/Logo do Topo */
-.top-banner img {
-  max-height: 80px; /* Altere para 60px se quiser ainda menor, ou 100px se quiser um pouco maior */
-  width: auto;
-  display: block;
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-/* DESTRAVA DEFINITIVA DO BANNER DO TOPO */
-header.site-head .wrap.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.top-banner {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  text-align: center;
-}
-
-.top-banner img {
-  width: 100% !important;
-  max-width: 600px; /* Limite máximo elegante para não quebrar a tela */
-  height: auto !important;
-  max-height: none !important;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
 }
