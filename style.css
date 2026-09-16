@@ -354,3 +354,29 @@ footer.site-foot {
   align-items: center;
   gap: 16px;
 }
+
+/* DESTRAVA DEFINITIVA DO BANNER DO TOPO */
+header.site-head .wrap.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.top-banner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.top-banner img {
+  width: 100% !important;
+  max-width: 600px; /* Limite máximo elegante para não quebrar a tela */
+  height: auto !important;
+  max-height: none !important;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
