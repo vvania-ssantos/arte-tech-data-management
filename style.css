@@ -12,7 +12,7 @@
   --serif: "Fraunces", Georgia, serif;
   --sans: "Work Sans", -apple-system, Segoe UI, sans-serif;
 
-  --max-w: 960px; /* Aumentado ligeiramente para acomodar a grade de produtos */
+  --max-w: 960px;
 }
 
 * { box-sizing: border-box; }
@@ -99,10 +99,10 @@ nav.site-nav a[aria-current="page"] {
   border-color: var(--accent);
 }
 
-/* ---------- hero ---------- */
+/* ---------- hero / banner ajustado ---------- */
 
 .hero {
-  padding: 64px 0 40px;
+  padding: 48px 0 32px;
   border-bottom: 1px solid var(--line);
 }
 .hero h1 {
@@ -120,13 +120,16 @@ nav.site-nav a[aria-current="page"] {
   font-size: 1.05rem;
 }
 
+/* Ajuste Fino do Banner Principal */
 .hero-banner {
   display: block;
   width: 100%;
-  max-height: 280px;
-  object-fit: cover;
+  height: 180px; /* Altura controlada para não ocupar a tela toda */
+  object-fit: cover; /* Recorta suavemente sem distorcer a imagem */
+  object-position: center; /* Garante foco no centro da imagem */
   border: 1px solid var(--line);
-  margin-bottom: 32px;
+  border-radius: 6px;
+  margin-bottom: 28px;
 }
 
 .hero-actions {
@@ -204,6 +207,7 @@ h2 {
   background: var(--bg-panel);
   border: 1px solid var(--line);
   padding: 16px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, border-color 0.2s ease;
@@ -219,6 +223,7 @@ h2 {
   height: 240px;
   object-fit: cover;
   border: 1px solid var(--line);
+  border-radius: 4px;
   margin-bottom: 16px;
   background: var(--bg);
 }
@@ -251,6 +256,7 @@ h2 {
   padding: 8px 12px;
   font-size: 0.85rem;
   border-bottom: none;
+  border-radius: 4px;
 }
 
 .product-card .btn-whatsapp:hover {
@@ -292,12 +298,6 @@ h2 {
 .entry.pending h3, .entry.pending p { color: var(--text-muted); }
 .entry.pending time { color: var(--accent); }
 
-@media (max-width: 520px) {
-  .entry { grid-template-columns: 1fr; gap: 6px; }
-  .products-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; align-items: flex-start; }
-}
-
 /* ---------- página sobre ---------- */
 
 .about-block { max-width: 60ch; }
@@ -328,51 +328,14 @@ footer.site-foot {
   color: var(--text-muted);
   font-size: .85rem;
 }
-Exemplo de como fica o HTML da Home (index.html) ajustado:
-No seu index.html, você agora pode incluir a seção das bolsas antes ou depois da lista do blog dentro da tag <main>:
 
-HTML
-<main>
-  <div class="wrap">
-    <!-- SEÇÃO 1: VITRINE DE BOLSAS -->
-    <section class="section-block" id="colecao">
-      <p class="section-label">Coleção Autoral</p>
-      <h2>Bolsas Artesanais</h2>
-      
-      <div class="products-grid">
-        <!-- Bolsa 1 -->
-        <article class="product-card">
-          <img src="assets/bolsa1.jpg" alt="Bolsa Crochê Eudora">
-          <h3>Bolsa Eudora</h3>
-          <p class="price">R$ 180,00</p>
-          <p>Confeccionada em fio de malha premium, alça metálica e acabamento estruturado.</p>
-          <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-whatsapp">Encomendar via WhatsApp</a>
-        </article>
+/* ---------- responsividade (celular) ---------- */
 
-        <!-- Bolsa 2 -->
-        <article class="product-card">
-          <img src="assets/bolsa2.jpg" alt="Bolsa Tela & Fio">
-          <h3>Bolsa Tela & Fio</h3>
-          <p class="price">R$ 220,00</p>
-          <p>Design moderno sobre tela com alta durabilidade, leveza e elegância.</p>
-          <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-whatsapp">Encomendar via WhatsApp</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- SEÇÃO 2: BLOG / REGISTROS -->
-    <section class="section-block">
-      <p class="section-label">Novidades & Reflexões</p>
-      <h2>Últimos Registros</h2>
-      <ul class="entry-list">
-        <li class="entry">
-          <time>10/09/2026</time>
-          <div>
-            <h3><a href="blog.html">Primeiro Post</a></h3>
-            <p>Oi! Este é o meu primeiro post no blog. Aos poucos vou escrever mais conteúdos aqui sobre processo criativo e gestão.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
-</main>
+@media (max-width: 520px) {
+  .hero-banner {
+    height: 140px; /* Ainda mais compacto no celular */
+  }
+  .entry { grid-template-columns: 1fr; gap: 6px; }
+  .products-grid { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+}
