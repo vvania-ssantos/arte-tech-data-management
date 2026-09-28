@@ -1,0 +1,4 @@
+﻿id,nome_modelo,tamanho,fio_principal_cor,horas_trabalhadas,custo_materiais_calculado,preco_venda_sugerido,data_inicio,data_fim,status_venda,foto_url
+1,Modelo Alpha 2.5mm,P,Preta,42.0,27.0,280.0,2026-05-19,2026-05-29,Estoque,
+2,Bolsa Média de Fio Náutico,,,2.5,0.0,0.0,2026-06-01,,Em produção,
+3,Clutch Bege Tela Plástica,M,Fio Náutico NYBC 3mm Bege,15.0,48.69,285.0,2026-09-28,,Em produção,
